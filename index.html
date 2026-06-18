@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PredicX — Predictive Intelligence for Power Generation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ──────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+        <a href="#" class="nav-logo">
+      <div class="logo-icon" style="background:transparent;border:none;width:48px;height:48px;padding:0;">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ngA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2252B2"/>
+      <stop offset="100%" stop-color="#1A2E6E"/>
+    </linearGradient>
+    <linearGradient id="tgA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4EA8F0"/>
+      <stop offset="100%" stop-color="#00C9C4"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#ngA)" d="M 39.64,21.73 L 45.85,22.47 L 45.85,27.53 L 39.64,28.27 L 37.66,33.04 L 41.53,37.95 L 37.95,41.53 L 33.04,37.66 L 28.27,39.64 L 27.53,45.85 L 22.47,45.85 L 21.73,39.64 L 16.96,37.66 L 12.05,41.53 L 8.47,37.95 L 12.34,33.04 L 10.36,28.27 L 4.15,27.53 L 4.15,22.47 L 10.36,21.73 L 12.34,16.96 L 8.47,12.05 L 12.05,8.47 L 16.96,12.34 L 21.73,10.36 L 22.47,4.15 L 27.53,4.15 L 28.27,10.36 L 33.04,12.34 L 37.95,8.47 L 41.53,12.05 L 37.66,16.96 Z"/>
+  <circle cx="25" cy="25" r="13" fill="url(#ngA)"/>
+  <circle cx="25" cy="25" r="7.5" fill="white" opacity="0.08"/>
+  <polyline points="10,17 4,17 4,22" fill="none" stroke="url(#tgA)" stroke-width="1.4" stroke-linecap="square"/>
+  <rect x="2.5" y="21" width="3" height="3" rx="0.5" fill="url(#tgA)"/>
+  <line x1="10" y1="25" x2="2" y2="25" stroke="url(#tgA)" stroke-width="1.4" stroke-linecap="square"/>
+  <rect x="0.5" y="23.5" width="3" height="3" rx="0.5" fill="url(#tgA)"/>
+  <polyline points="10,33 4,33 4,28" fill="none" stroke="url(#tgA)" stroke-width="1.4" stroke-linecap="square"/>
+  <rect x="2.5" y="26" width="3" height="3" rx="0.5" fill="url(#tgA)"/>
+  <line x1="29" y1="17" x2="20" y2="32" stroke="white" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="30" cy="16" r="4.2" fill="none" stroke="white" stroke-width="2.8"/>
+  <line x1="27.6" y1="18.5" x2="32" y2="13.5" stroke="url(#ngA)" stroke-width="2.5"/>
+  <polyline points="17,26 20,26 21.5,22 23.5,30 25,26 28,26" fill="none" stroke="url(#tgA)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </div>
+      <span class="logo-text">Predic<span class="tx">X</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li>
+        <button>Solutions <span class="chevron">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="#products"><span class="dd-dot"></span>PRISM — Solar Analytics</a>
+          <a href="#products"><span class="dd-dot"></span>WINDWATCH — Turbine Health</a>
+          <a href="#products"><span class="dd-dot"></span>NUCLEUS — Nuclear Monitoring</a>
+          <a href="#products"><span class="dd-dot"></span>FLOWGUARD — Oil &amp; Gas</a>
+        </div>
+      </li>
+      <li>
+        <button>Industries <span class="chevron">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="#assets"><span class="dd-dot"></span>Solar Energy</a>
+          <a href="#assets"><span class="dd-dot"></span>Wind Power</a>
+          <a href="#assets"><span class="dd-dot"></span>Nuclear Power</a>
+          <a href="#assets"><span class="dd-dot"></span>Oil &amp; Gas</a>
+          <a href="#assets"><span class="dd-dot"></span>Water Treatment</a>
+        </div>
+      </li>
+      <li><a href="#how">Technology</a></li>
+      <li><a href="#founders">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Request Demo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────── -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">AI-Powered Predictive Maintenance</div>
+      <h1>
+        Predict Failure<br>
+        <span class="accent">Before</span> It<br>
+        <span class="maroon-accent">Happens</span>
+      </h1>
+      <p class="hero-desc">
+        PredicX connects directly to your plant's existing SCADA infrastructure and uses that live operational data to train AI models specific to your asset — predicting degradation and power loss before it becomes a critical failure, reducing waste and supporting a more sustainable energy future.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          See PRISM in Action
+        </a>
+        <a href="#how" class="btn-outline">How It Works</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">70%+</div>
+          <div class="label">Early Detection Rate</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">30+</div>
+          <div class="label">Days Advance Warning</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">15%+</div>
+          <div class="label">Energy Loss Prevented</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="float-card float-card-top">
+        <div class="fc-label">Active Risk Alert</div>
+        <div class="fc-value">Panel #Ka780</div>
+        <div class="fc-sub">Microcrack detected — High likelihood</div>
+        <div class="fc-bar"><div class="fc-bar-fill"></div></div>
+      </div>
+
+      <div class="hero-dashboard">
+        <div class="dashboard-header">
+          <div class="dashboard-title">PRISM — Live Dashboard · Solar_PV_D4M0</div>
+          <div class="dashboard-dots"><span></span><span></span><span></span></div>
+        </div>
+        <img class="dashboard-img" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80" alt="PRISM Dashboard">
+      </div>
+
+      <div class="float-card float-card-bottom">
+        <div class="fc-label">Monitoring Queue</div>
+        <div class="fc-value">239,805</div>
+        <div class="fc-sub">Sensor logs processed today</div>
+        <div class="fc-bar"><div class="fc-bar-fill" style="animation-delay:0.5s"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ──────────────────────────────────────── -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="dot"></span> Solar PV Failure Prediction</div>
+    <div class="marquee-item"><span class="dot"></span> Wind Turbine Degradation Modeling</div>
+    <div class="marquee-item"><span class="dot"></span> Nuclear Plant Digital Twin Monitoring</div>
+    <div class="marquee-item"><span class="dot"></span> Oil &amp; Gas Pipeline AI Analytics</div>
+    <div class="marquee-item"><span class="dot"></span> Probabilistic Risk Modeling</div>
+    <div class="marquee-item"><span class="dot"></span> Real-Time SCADA Integration</div>
+    <div class="marquee-item"><span class="dot"></span> Plant-Specific AI Model Training</div>
+    <div class="marquee-item"><span class="dot"></span> Predictive Degradation Intelligence</div>
+    <div class="marquee-item"><span class="dot"></span> Sustainable Energy Optimization</div>
+    <div class="marquee-item"><span class="dot"></span> Digital Twin Asset Analytics</div>
+    <!-- repeat for seamless loop -->
+    <div class="marquee-item"><span class="dot"></span> Solar PV Failure Prediction</div>
+    <div class="marquee-item"><span class="dot"></span> Wind Turbine Degradation Modeling</div>
+    <div class="marquee-item"><span class="dot"></span> Nuclear Plant Digital Twin Monitoring</div>
+    <div class="marquee-item"><span class="dot"></span> Oil &amp; Gas Pipeline AI Analytics</div>
+    <div class="marquee-item"><span class="dot"></span> Probabilistic Risk Modeling</div>
+    <div class="marquee-item"><span class="dot"></span> Real-Time SCADA Integration</div>
+    <div class="marquee-item"><span class="dot"></span> Plant-Specific AI Model Training</div>
+    <div class="marquee-item"><span class="dot"></span> Predictive Degradation Intelligence</div>
+    <div class="marquee-item"><span class="dot"></span> Sustainable Energy Optimization</div>
+    <div class="marquee-item"><span class="dot"></span> Digital Twin Asset Analytics</div>
+  </div>
+</div>
+
+<!-- ── ABOUT ────────────────────────────────────────── -->
+<section class="about-section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-img-stack">
+          <div class="about-badge-float">
+            <div class="big">5+</div>
+            <div class="small">Sectors Covered</div>
+          </div>
+          <img class="about-img-main"
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80"
+            alt="Power generation facility">
+          <img class="about-img-accent"
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=80"
+            alt="Solar panel closeup">
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title">Minimizing Failures. <span class="accent">Saving Energy.</span> Building a Sustainable Future.</h2>
+        <p class="section-desc">
+          Every undetected fault in a power generation asset wastes energy, accelerates degradation, and contributes to unnecessary carbon emissions. PredicX plugs into your plant's SCADA system and uses that live operational data to train AI models that predict failures before significant power loss occurs — protecting your assets and the planet.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <div class="feat-body">
+              <h4>SCADA-Driven AI Training</h4>
+              <p>Your plant's own operational data — live from your SCADA system — is what trains the model. No generic baselines. The AI learns the unique digital fingerprint of your specific installation.</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8C8 10 5.9 16.17 3.82 19.4L5 21l1.5-1.5C8.5 17 12 17 14 15c2-2 3-5 3-7z"/><path d="M3 3l18 18" stroke-width="1.5" opacity="0.4"/></svg></div>
+            <div class="feat-body">
+              <h4>Sustainability at the Core</h4>
+              <p>Preventing energy loss and extending asset life directly reduces carbon output. PredicX's predictive intelligence helps operators maximize clean energy yield while minimizing waste and premature replacements.</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <div class="feat-body">
+              <h4>Zero-Disruption Integration</h4>
+              <p>PredicX connects to your existing digital infrastructure without hardware changes. Our platform ingests live data streams and surfaces actionable risk intelligence within hours of going live.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTS / TABS ──────────────────────────────── -->
+<section class="products-section" id="products">
+  <div class="section-inner">
+    <div class="section-label">Product Suite</div>
+    <h2 class="section-title">Intelligence Built for <span class="text-gold">Every Asset</span></h2>
+    <p class="section-desc">Each PredicX product is engineered from the ground up for a specific asset class — trained on real SCADA data, calibrated to your failure modes, and built to minimize energy loss and extend asset life.</p>
+
+    <div class="tabs-container">
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn active" onclick="switchTab('prism', this)" role="tab">
+          <span class="tab-dot"></span>
+          PRISM
+          <span class="tab-badge">LIVE</span>
+        </button>
+        <button class="tab-btn coming" onclick="switchTab('windwatch', this)" role="tab">
+          <span class="tab-dot"></span>
+          WINDWATCH
+          <span class="tab-badge">Q2 2026</span>
+        </button>
+        <button class="tab-btn coming" onclick="switchTab('nucleus', this)" role="tab">
+          <span class="tab-dot"></span>
+          NUCLEUS
+          <span class="tab-badge">Q3 2026</span>
+        </button>
+        <button class="tab-btn coming" onclick="switchTab('flowguard', this)" role="tab">
+          <span class="tab-dot"></span>
+          FLOWGUARD
+          <span class="tab-badge">Q4 2026</span>
+        </button>
+        <button class="tab-btn coming" onclick="switchTab('hydroscan', this)" role="tab">
+          <span class="tab-dot"></span>
+          HYDROSCAN
+          <span class="tab-badge">2027</span>
+        </button>
+      </div>
+
+      <!-- PRISM -->
+      <div class="tab-content active" id="tab-prism">
+        <div class="prism-panel">
+          <div class="prism-info">
+            <div class="prism-logo-badge">
+              <div>
+                <div class="badge-text">PRISM</div>
+                <div class="badge-sub">Probabilistic Risk<br>Identification of<br>Solar Microcracks</div>
+              </div>
+            </div>
+            <h3>Our Flagship Product</h3>
+            <h2>Predict Solar Panel Failure — Weeks in Advance</h2>
+            <p>
+              Microcracks in photovoltaic cells are invisible until it's too late — silently accelerating degradation and causing significant lifetime power loss. PRISM ingests your plant's live SCADA data streams and trains a probabilistic AI model to detect anomalous degradation patterns, localize risk zones, and predict failures weeks before they cause significant power loss.
+            </p>
+            <div class="prism-features-list">
+              <div class="prism-feat">
+                <span class="prism-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>
+                <div class="prism-feat-text">Live SCADA data ingestion — continuous digital feed from your existing infrastructure</div>
+              </div>
+              <div class="prism-feat">
+                <span class="prism-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.14Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.14Z"/></svg></span>
+                <div class="prism-feat-text">Plant-specific AI model — trained on your asset's unique operational signature</div>
+              </div>
+              <div class="prism-feat">
+                <span class="prism-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></span>
+                <div class="prism-feat-text">3D farm risk heatmaps — spatial probability visualization across the entire array</div>
+              </div>
+              <div class="prism-feat">
+                <span class="prism-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+                <div class="prism-feat-text">Probabilistic degradation scoring — confidence-ranked failure predictions per panel</div>
+              </div>
+              <div class="prism-feat">
+                <span class="prism-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>
+                <div class="prism-feat-text">Prioritized monitoring queue — risk-ranked panel list updated in real time</div>
+              </div>
+              <div class="prism-feat">
+                <span class="prism-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8C8 10 5.9 16.17 3.82 19.4L5 21l1.5-1.5C8.5 17 12 17 14 15c2-2 3-5 3-7z"/><path d="M3 3l18 18" stroke-width="1.5" opacity="0.4"/></svg></span>
+                <div class="prism-feat-text">Sustainability reporting — energy loss prevented and carbon impact metrics</div>
+              </div>
+            </div>
+            <a href="#contact" class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Request a Demo
+            </a>
+          </div>
+          <div class="prism-visual">
+            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80" alt="Solar panel monitoring">
+            <div class="prism-visual-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WINDWATCH -->
+      <div class="tab-content" id="tab-windwatch">
+        <div class="coming-grid">
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg></span>
+            <div class="cc-abbr">WINDWATCH</div>
+            <h4>Turbine Blade Fatigue Analysis</h4>
+            <p>Fibre-optic strain sensing and vibration spectral analysis to detect leading-edge erosion, delamination, and root cracking in wind turbine blades before structural failure occurs.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+            <div class="cc-abbr">Drivetrain Health</div>
+            <h4>Gearbox &amp; Bearing Intelligence</h4>
+            <p>High-frequency vibration fingerprinting of main bearings, gearbox, and generator — correlating harmonics to specific fault modes with confidence-scored remaining useful life estimates.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H7l-2 6h12l-2-6z"/><path d="M7 11l-3 11h16l-3-11"/></svg></span>
+            <div class="cc-abbr">Tower &amp; Foundation</div>
+            <h4>Structural Integrity Monitoring</h4>
+            <p>SHM sensor networks on tower walls and monopile foundations, detecting fatigue crack growth in steel welds and concrete degradation in offshore installations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NUCLEUS -->
+      <div class="tab-content" id="tab-nucleus">
+        <div class="coming-grid">
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5z"/></svg></span>
+            <div class="cc-abbr">NUCLEUS</div>
+            <h4>Reactor Vessel Monitoring</h4>
+            <p>Continuous probabilistic assessment of reactor pressure vessel embrittlement and weld integrity, integrating neutron flux history with ultrasonic in-service inspection data.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span>
+            <div class="cc-abbr">Primary Loop</div>
+            <h4>Coolant System Health</h4>
+            <p>Acoustic leak detection and vibration-based health monitoring for primary coolant pumps, steam generators, and pressurizers — all safety-grade qualified.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+            <div class="cc-abbr">Balance of Plant</div>
+            <h4>Turbine &amp; Balance of Plant</h4>
+            <p>Predictive maintenance for nuclear turbine generators, feedwater pumps, and heat exchangers — extending run lengths and supporting license renewal programs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLOWGUARD -->
+      <div class="tab-content" id="tab-flowguard">
+        <div class="coming-grid">
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M12 2v20"/><circle cx="12" cy="12" r="4"/><path d="M4.93 4.93l14.14 14.14" stroke-width="1.5" opacity="0.5"/></svg></span>
+            <div class="cc-abbr">FLOWGUARD</div>
+            <h4>Pipeline Corrosion Detection</h4>
+            <p>Inline inspection data fusion with ML-based corrosion growth modeling — predicting wall thinning hot spots and recommending optimal intervention windows to prevent ruptures.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+            <div class="cc-abbr">Rotating Equipment</div>
+            <h4>Compressor &amp; Pump Health</h4>
+            <p>Continuous monitoring of centrifugal and reciprocating compressors, detecting valve wear, piston rod fatigue, and impeller erosion before unplanned shutdowns.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><line x1="17" y1="20" x2="17" y2="14"/><line x1="12" y1="20" x2="12" y2="14"/><line x1="7" y1="20" x2="7" y2="14"/></svg></span>
+            <div class="cc-abbr">Process Safety</div>
+            <h4>Heat Exchanger Fouling</h4>
+            <p>Real-time heat transfer efficiency tracking combined with predictive fouling models — optimising cleaning schedules and preventing tube failures in HEX bundles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HYDROSCAN -->
+      <div class="tab-content" id="tab-hydroscan">
+        <div class="coming-grid">
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span>
+            <div class="cc-abbr">HYDROSCAN</div>
+            <h4>Water Treatment Plant AI</h4>
+            <p>Predictive monitoring for membrane filtration systems, pump stations, and clarifiers — detecting biofouling, membrane integrity failures, and chemical dosing drift before compliance breaches.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/><path d="M2 18c2-4 4-4 6 0s4 4 6 0 4-4 6 0" opacity="0.5"/></svg></span>
+            <div class="cc-abbr">Dam &amp; Hydro</div>
+            <h4>Hydroelectric Asset Health</h4>
+            <p>Structural health monitoring for dam bodies, penstock pipelines, and Francis/Pelton turbines — integrating geotechnical sensors with probabilistic seepage and settlement models.</p>
+          </div>
+          <div class="coming-card">
+            <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5V2"/><path d="M8.5 2h7"/><path d="M14.5 16h-5"/></svg></span>
+            <div class="cc-abbr">Water Quality</div>
+            <h4>Contamination Early Warning</h4>
+            <p>Multi-parameter water quality sensor arrays with AI-driven anomaly detection — identifying contamination events, sensor drift, and treatment process upsets in near real time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ASSETS / INDUSTRIES ──────────────────────────── -->
+<section class="assets-section" id="assets">
+  <div class="section-inner">
+    <div class="assets-header">
+      <div>
+        <div class="section-label">Industries</div>
+        <h2 class="section-title">Critical Assets We <span class="accent">Protect</span></h2>
+      </div>
+      <p class="section-desc" style="max-width:400px;">Power generation assets with the highest failure consequence are where PredicX's intelligence matters most — protecting output, extending life, and safeguarding sustainability targets.</p>
+    </div>
+
+    <div class="assets-grid">
+      <!-- Large card -->
+      <div class="asset-card asset-card-large">
+        <div class="asset-img-wrap">
+          <img class="asset-img"
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80"
+            alt="Solar farm aerial view">
+        </div>
+        <div class="asset-overlay">
+          <div class="asset-info">
+            <div class="asset-tag">Primary Focus — Active Product</div>
+            <h3>Utility-Scale Solar Farms</h3>
+            <p>Thousands of PV panels across vast arrays — each a silent failure waiting to happen. PRISM turns the entire farm into a live risk map.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regular card -->
+      <div class="asset-card">
+        <div class="asset-img-wrap">
+          <img class="asset-img"
+            src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=700&q=80"
+            alt="Wind turbines">
+        </div>
+        <div class="asset-overlay">
+          <div class="asset-info">
+            <div class="asset-tag">WINDWATCH — Q2 2026</div>
+            <h3>Wind Turbines</h3>
+            <p>Blade fatigue, gearbox wear, and tower integrity monitoring for onshore and offshore installations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regular card -->
+      <div class="asset-card">
+        <div class="asset-img-wrap">
+          <img class="asset-img"
+            src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=700&q=80"
+            alt="Gas turbine">
+        </div>
+        <div class="asset-overlay">
+          <div class="asset-info">
+            <div class="asset-tag">FLOWGUARD — Q4 2026</div>
+            <h3>Gas &amp; Steam Turbines</h3>
+            <p>Hot gas path inspections, blade creep monitoring, and combustion dynamics analysis for combined-cycle plants.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regular card -->
+      <div class="asset-card">
+        <div class="asset-img-wrap">
+          <img class="asset-img"
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80"
+            alt="Oil and gas facility">
+        </div>
+        <div class="asset-overlay">
+          <div class="asset-info">
+            <div class="asset-tag">FLOWGUARD — Q4 2026</div>
+            <h3>Oil &amp; Gas Infrastructure</h3>
+            <p>Pipelines, compressor stations, and processing facilities — continuous integrity monitoring from wellhead to terminal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regular card -->
+      <div class="asset-card">
+        <div class="asset-img-wrap">
+          <img class="asset-img"
+            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=700&q=80"
+            alt="Nuclear power plant">
+        </div>
+        <div class="asset-overlay">
+          <div class="asset-info">
+            <div class="asset-tag">NUCLEUS — Q3 2026</div>
+            <h3>Nuclear Power Plants</h3>
+            <p>Safety-critical probabilistic monitoring for reactor pressure vessels, cooling circuits, and balance-of-plant systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regular card -->
+      <div class="asset-card">
+        <div class="asset-img-wrap">
+          <img class="asset-img"
+            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=700&q=80"
+            alt="Water treatment plant">
+        </div>
+        <div class="asset-overlay">
+          <div class="asset-info">
+            <div class="asset-tag">HYDROSCAN — 2027</div>
+            <h3>Water Treatment Plants</h3>
+            <p>Membrane integrity, pump health, and contamination early-warning for drinking water and wastewater facilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ──────────────────────────────────── -->
+<section class="how-section" id="how">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom:60px;">
+      <div class="section-label" style="justify-content:center;">How It Works</div>
+      <h2 class="section-title">From <span class="accent">SCADA Data</span> to Actionable Intelligence</h2>
+      <p class="section-desc" style="margin:0 auto; text-align:center;">A rigorous digital pipeline that takes your plant's live operational data and transforms it into confident, prioritised failure predictions — no new hardware required.</p>
+    </div>
+
+    <div class="steps-container">
+      <div class="steps-line"></div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <h4>SCADA Connection</h4>
+          <p>PredicX connects directly to your plant's existing SCADA system — no new hardware, no disruption. Your live operational data begins streaming to our platform instantly.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <h4>Data Ingestion</h4>
+          <p>Historical and real-time SCADA data flows into our cloud platform — encrypted, latency-optimised, and continuously updated as your plant operates.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <h4>AI Model Training</h4>
+          <p>Your plant's unique digital signature is learned. A probabilistic model is calibrated to your specific asset type, operational history, and environmental conditions.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <h4>Risk Scoring</h4>
+          <p>Every asset receives a continuously updated failure probability score. The system flags anomalies and builds a prioritised risk heatmap — updated in real time.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <h4>Actionable Intelligence</h4>
+          <p>Operators receive ranked risk alerts with predicted degradation timelines, estimated energy loss, and recommended intervention windows — weeks before failure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── METRICS ───────────────────────────────────────── -->
+<div class="metrics-section">
+  <div class="metrics-grid">
+    <div class="metric-item">
+      <div class="metric-num">70<span>%+</span></div>
+      <div class="metric-label">Fault Detection Accuracy</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num">30<span>+</span></div>
+      <div class="metric-label">Days Early Warning</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num">15<span>%+</span></div>
+      <div class="metric-label">Energy Loss Prevented</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num">5<span>x+</span></div>
+      <div class="metric-label">ROI on Maintenance Cost</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOUNDERS ──────────────────────────────────────── -->
+<section class="founders-section" id="founders">
+  <div class="section-inner">
+    <div class="section-label">The Team</div>
+    <h2 class="section-title">The People Behind <span class="text-gold">PredicX</span></h2>
+    <p class="section-desc">A multidisciplinary team of engineers, data scientists, and energy sector innovators united by one mission: eliminating power generation failures through digital intelligence.</p>
+
+    <div class="founders-grid">
+      <!-- CEO -->
+      <div class="founder-card">
+        <div class="founder-img-wrap">
+          <span class="founder-avatar-placeholder">ME</span>
+        </div>
+        <div class="founder-body">
+          <h3>Mohamed Elsherbini</h3>
+          <div class="role">Co-Founder &amp; Chief Executive Officer</div>
+          <p>Visionary leader driving PredicX's strategy and growth. With a background bridging energy engineering and digital innovation, Mohamed leads the mission to eliminate power generation failures at scale.</p>
+          <div class="founder-links">
+            <a href="#" class="founder-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="founder-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTO -->
+      <div class="founder-card">
+        <div class="founder-img-wrap">
+          <span class="founder-avatar-placeholder">AA</span>
+        </div>
+        <div class="founder-body">
+          <h3>Ameer Almady</h3>
+          <div class="role">Co-Founder &amp; Chief Technology Officer</div>
+          <p>The architect behind PredicX's AI engine. Ameer leads all technology development — from SCADA data pipelines to probabilistic AI model training — with deep expertise in machine learning for industrial systems.</p>
+          <div class="founder-links">
+            <a href="#" class="founder-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="founder-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COO -->
+      <div class="founder-card">
+        <div class="founder-img-wrap">
+          <span class="founder-avatar-placeholder">HF</span>
+        </div>
+        <div class="founder-body">
+          <h3>Haris Fazal</h3>
+          <div class="role">Co-Founder &amp; Chief Operating Officer</div>
+          <p>The operational backbone of PredicX. Haris oversees deployment, client partnerships, and scale-up — ensuring every customer receives a seamless integration experience from pilot to full production rollout.</p>
+          <div class="founder-links">
+            <a href="#" class="founder-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="founder-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOCIAL MEDIA ──────────────────────────────────── -->
+<section class="social-section" id="social">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom:52px;">
+      <div class="section-label" style="justify-content:center;">Follow Our Work</div>
+      <h2 class="section-title">Stay Connected with <span class="accent">PredicX</span></h2>
+      <p class="section-desc" style="margin:0 auto; text-align:center;">Follow our journey as we build the future of predictive maintenance — research breakthroughs, product launches, and insights from the field.</p>
+    </div>
+
+    <div class="social-grid">
+      <a href="https://linkedin.com" target="_blank" class="social-card soc-linkedin">
+        <div class="social-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </div>
+        <div class="social-name">LinkedIn</div>
+        <div class="social-handle">@PredicX_Energy</div>
+      </a>
+
+      <a href="https://x.com" target="_blank" class="social-card soc-x">
+        <div class="social-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+        <div class="social-name">X (Twitter)</div>
+        <div class="social-handle">@PredicX</div>
+      </a>
+
+      <a href="https://youtube.com" target="_blank" class="social-card soc-yt">
+        <div class="social-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </div>
+        <div class="social-name">YouTube</div>
+        <div class="social-handle">PredicX Technologies</div>
+      </a>
+
+      <a href="https://instagram.com" target="_blank" class="social-card soc-ig">
+        <div class="social-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </div>
+        <div class="social-name">Instagram</div>
+        <div class="social-handle">@predicx.tech</div>
+      </a>
+
+      <a href="https://github.com" target="_blank" class="social-card soc-gh">
+        <div class="social-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </div>
+        <div class="social-name">GitHub</div>
+        <div class="social-handle">github.com/predicx</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ───────────────────────────────────────────── -->
+<section class="cta-section" id="contact">
+  <div class="section-inner">
+    <div class="section-label" style="justify-content:center;color:var(--gold);">Get Started</div>
+    <h2>Ready to Predict<br><span style="color:var(--gold);">Every Failure</span>?</h2>
+    <p>Talk directly to our team. We'll walk you through how PRISM connects to your plant's SCADA data and show you the intelligence it delivers — no hardware changes, no commitment.</p>
+    <div style="margin:0 auto 28px; display:inline-flex; flex-direction:column; align-items:center; gap:12px;">
+      <a href="tel:+97466635418" class="btn-primary" style="font-size:20px; padding:18px 44px; letter-spacing:1px; text-decoration:none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.24a16 16 0 0 0 5.85 5.85l1.62-1.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>
+        +974 6663 5418
+      </a>
+    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.3);">Available Sunday – Thursday · 9 AM – 6 PM AST</p>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+                <a href="#" class="nav-logo" style="display:inline-flex;">
+          <div class="logo-icon" style="background:transparent;border:none;width:48px;height:48px;padding:0;">
+            <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ngB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2252B2"/>
+      <stop offset="100%" stop-color="#1A2E6E"/>
+    </linearGradient>
+    <linearGradient id="tgB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4EA8F0"/>
+      <stop offset="100%" stop-color="#00C9C4"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#ngB)" d="M 39.64,21.73 L 45.85,22.47 L 45.85,27.53 L 39.64,28.27 L 37.66,33.04 L 41.53,37.95 L 37.95,41.53 L 33.04,37.66 L 28.27,39.64 L 27.53,45.85 L 22.47,45.85 L 21.73,39.64 L 16.96,37.66 L 12.05,41.53 L 8.47,37.95 L 12.34,33.04 L 10.36,28.27 L 4.15,27.53 L 4.15,22.47 L 10.36,21.73 L 12.34,16.96 L 8.47,12.05 L 12.05,8.47 L 16.96,12.34 L 21.73,10.36 L 22.47,4.15 L 27.53,4.15 L 28.27,10.36 L 33.04,12.34 L 37.95,8.47 L 41.53,12.05 L 37.66,16.96 Z"/>
+  <circle cx="25" cy="25" r="13" fill="url(#ngB)"/>
+  <circle cx="25" cy="25" r="7.5" fill="white" opacity="0.08"/>
+  <polyline points="10,17 4,17 4,22" fill="none" stroke="url(#tgB)" stroke-width="1.4" stroke-linecap="square"/>
+  <rect x="2.5" y="21" width="3" height="3" rx="0.5" fill="url(#tgB)"/>
+  <line x1="10" y1="25" x2="2" y2="25" stroke="url(#tgB)" stroke-width="1.4" stroke-linecap="square"/>
+  <rect x="0.5" y="23.5" width="3" height="3" rx="0.5" fill="url(#tgB)"/>
+  <polyline points="10,33 4,33 4,28" fill="none" stroke="url(#tgB)" stroke-width="1.4" stroke-linecap="square"/>
+  <rect x="2.5" y="26" width="3" height="3" rx="0.5" fill="url(#tgB)"/>
+  <line x1="29" y1="17" x2="20" y2="32" stroke="white" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="30" cy="16" r="4.2" fill="none" stroke="white" stroke-width="2.8"/>
+  <line x1="27.6" y1="18.5" x2="32" y2="13.5" stroke="url(#ngB)" stroke-width="2.5"/>
+  <polyline points="17,26 20,26 21.5,22 23.5,30 25,26 28,26" fill="none" stroke="url(#tgB)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </div>
+          <span class="logo-text">Predic<span class="tx">X</span></span>
+        </a>
+        <p>Minimizing failures. Saving energy. Building a sustainable future — one plant at a time. From solar to nuclear, PredicX's digital intelligence keeps power flowing.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="#products">PRISM — Solar</a></li>
+          <li><a href="#products">WINDWATCH — Wind</a></li>
+          <li><a href="#products">NUCLEUS — Nuclear</a></li>
+          <li><a href="#products">FLOWGUARD — Oil &amp; Gas</a></li>
+          <li><a href="#products">HYDROSCAN — Water</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#founders">Founders</a></li>
+          <li><a href="#how">Technology</a></li>
+          <li><a href="#contact">Careers</a></li>
+          <li><a href="#contact">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://x.com" target="_blank">X (Twitter)</a></li>
+          <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 PredicX Technologies. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
